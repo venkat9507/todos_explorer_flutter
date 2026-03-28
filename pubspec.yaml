@@ -1,0 +1,67 @@
+name: flutter_interview_app
+description: "Todos Explorer - Clean Architecture + Riverpod"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+  flutter: '>=3.27.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # HTTP Client
+  http: ^1.2.0
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Models / Serialization
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.9.0
+
+  # Network Monitoring
+  connectivity_plus: ^6.0.0
+
+  # Logging
+  logger: ^2.5.0
+
+  # Icons
+  cupertino_icons: ^1.0.8
+  lottie: ^3.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+  # Code Generation
+  riverpod_generator: ^2.6.3
+  build_runner: ^2.4.13
+  build_runner_core: ^8.0.0
+  freezed: ^3.0.6
+  json_serializable: ^6.9.5
+
+  # Testing
+  mockito: ^5.4.4
+
+  # App Icon
+  flutter_launcher_icons: ^0.14.3
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icon.png"
+  web:
+    generate: true
+    image_path: "assets/app_icon.png"
+  windows:
+    generate: true
+    image_path: "assets/app_icon.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
